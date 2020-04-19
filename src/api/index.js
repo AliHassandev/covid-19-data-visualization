@@ -12,3 +12,13 @@ export const fetchData = async () => {
     }
 }
 
+export const fetchDailyData = async () {
+    try {
+        const { data } = await axios.get(`${apiUrl}/daily`);
+        console.log(data);
+        
+    } catch (error) {
+        
+    }
+}
+
