@@ -1,9 +1,16 @@
 import axios from 'axios';
 import { apiUrl } from './../config.json';
 
-export const fetchData = async () => {
+export const fetchData = async (country) => {
+
+    let dynamicUrl = apiUrl;
+
+    if(country){
+        dynamicUrl = `${apiUrl}/countries/${country}`;
+    }
+
     try{
-        const { data: {confirmed, recovered, deaths, lastUpdate } } = await axios.get(apiUrl);
+        const { data: {confirmed, recovered, deaths, lastUpdate } } = await axios.get(dynamicUrl);
 
         return { confirmed, recovered, deaths, lastUpdate };
 
