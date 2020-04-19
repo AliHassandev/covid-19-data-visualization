@@ -1,19 +1,55 @@
 .container {
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
 .card {
     margin: 0 2% !important;
+    margin-bottom: 15px !important;
+    background-color: #f1f1f1 !important;
+    transition: all .4s ease-in-out !important;
+}
+
+.card h5 {
+    transition: all .4s ease-in-out !important;
 }
 
 .infected {
     border-bottom: 10px solid #0099e5;
 }
+.infected:hover{
+    background-color: #0099e5 !important;
+    border-bottom: 10px solid #017fbe;
+
+}
+.infected h5 {
+    color: #0099e5 !important;
+    font-weight: bold;
+}
 
 .recovered {
     border-bottom: 10px solid #34bf49;
 }
+.recovered:hover{
+    background-color: #34bf49 !important;
+    border-bottom: 10px solid #228331;
+}
+.recovered h5 {
+    color: #34bf49 !important;
+    font-weight: bold;
+}
 
 .deaths {
     border-bottom: 10px solid #ff4c4c;
+}
+.deaths:hover{
+    background-color: #ff4c4c !important;
+    border-bottom: 10px solid #c22c2c;
+}
+.deaths h5 {
+    color: #ff4c4c !important;
+    font-weight: bold;
+}
+
+.card:hover h5 {
+    color: #000 !important;
 }

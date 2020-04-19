@@ -32,7 +32,7 @@ class App extends React.Component {
 
         return (
             <div className={styles.container}>
-                <h1>App</h1>
+                <h1>COVID-19 Data Visualization</h1>
                 <Cards
                     data={data} 
                     />
@@ -40,6 +40,7 @@ class App extends React.Component {
                     handleCountryChange={this.handleCountryChange} 
                     />
                 <Chart data={data} country={country} />
+                <p>By: <a href="https://github.com/AliHassandev" target="_blank">Ali Hassan</a></p>
             </div>
         )
     }

@@ -47,12 +47,12 @@ const Chart = ({data: { confirmed, recovered, deaths }, country}) => {
                 datasets: [{
                     label: 'People',
                     backgroundColor: ['#0099e5', '#34bf49', '#ff4c4c'],
-                    data: [ confirmed.value, recovered.value, deaths.value]
+                    data: [ confirmed.value, recovered.value, deaths.value],
                 }]
             }}
             options={{
                 legend: {display: false},
-                title: {display: true, text: `Current state in ${country}`}
+                title: {display: true, text: `Current state in ${country}`},
             }} />
         ): null
     );

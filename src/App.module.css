@@ -1,10 +1,25 @@
-body {
-    background-color: #eee;
-}
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;700&display=swap');
 
+body {
+    font-family: 'Baloo Paaji 2', cursive;
+    background-color: #e6e6e6;
+}
+h1 {
+    color: #0099e5;
+}
+H5,P, select, select option {
+    font-family: 'Baloo Paaji 2', cursive !important;
+}
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        margin: 0 10px;
+    }
+
 }
