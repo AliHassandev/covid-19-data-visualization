@@ -1,16 +1,29 @@
 .container {
     margin: 20px 0;
+    width: 100%;
+    max-width: 800px;
 }
 
+.date {
+        text-align: center;
+        font-size: 16px;
+}
 .card {
     margin: 0 2% !important;
     margin-bottom: 15px !important;
     background-color: #f1f1f1 !important;
     transition: all .4s ease-in-out !important;
+    text-align: center;
+    width: 200px;
+    max-height: 100px !important;
+}
+.card .MuiCardContent-root:last-child {
+	padding-bottom: 5px !important;
 }
 
 .card h5 {
     transition: all .4s ease-in-out !important;
+    text-align: center;
 }
 
 .infected {
