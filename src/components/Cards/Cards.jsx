@@ -4,11 +4,7 @@ import CountUp from 'react-countup';
 import cx from 'classnames';
 
 import styles from './Cards.module.css';
-const cardStyles = (theme) => ({
-    removeBottomPadding: {
-        paddingBottom: "0px"
-    }
-});
+
 const Cards = ( { data: { confirmed, recovered, deaths, lastUpdate} } ) => {
 
     if(!confirmed){

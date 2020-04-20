@@ -40,7 +40,7 @@ class App extends React.Component {
                     data={data} 
                     />
                 <Chart data={data} country={country} />
-                <p>By: <a href="https://github.com/AliHassandev" target="_blank">Ali Hassan</a></p>
+                <p className={styles.author}>By: <a href="https://github.com/AliHassandev" target="_blank">Ali Hassan</a></p>
             </div>
         )
     }
